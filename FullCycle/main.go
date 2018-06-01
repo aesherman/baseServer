@@ -28,7 +28,7 @@ func main() {
 	flag.Parse()
 
 	logger := log.New(os.Stdout, "http: ", log.LstdFlags)
-	logger.Println("Server is starting...")
+	logger.Println("Kick the tire and light the fires big daddy...")
 
 	router := http.NewServeMux()
 	router.Handle("/", index())
@@ -73,7 +73,7 @@ func main() {
 	}
 
 	<-done
-	logger.Println("Server stopped")
+	logger.Println("Server is kill.")
 }
 
 func index() http.Handler {
@@ -127,3 +127,6 @@ func tracing(nextRequestID func() string) func(http.Handler) http.Handler {
 		})
 	}
 }
+
+// Created by enricofoltran --- January 7, 2018
+// Modified and updated by Zazingo --- June 1, 2018
